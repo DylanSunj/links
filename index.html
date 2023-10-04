@@ -2,17 +2,21 @@
 <html>
   <head>
     <style>
-      body{
+      body {
         padding-top: 40px;
         padding-bottom: 40px;
         background-color: #16161a;
+        display: flex;
+        justify-content: center;
       }
 
       .profile-pic{
-        width: 128px;
-        height: 128px;
+        width: 256px;
+        height: 256px;
         object-fit: cover;
         border-radius: 128px;
+        display: flex;
+        justify-content: center;
       }
 
       .picholder{
@@ -24,33 +28,43 @@
 
       .name {
         color: #fffffe;
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
       }
 
-    .social-media a {
-      color: #7f5af0;
-      text-decoration: none;
+      .social-media a {
+        color: #7f5af0;
+        text-decoration: none;
+        display: flex;
+      }
+
+      .interests {
+        background-color: #94a1b2;
+        display: flex;
+        align-items: center;
+        padding: 5px;
     }
 
-    .interests {
-      background-color: #94a1b2;
-      display: flex;
-      align-items: center;
+      .interests a {
+        color: #7f5af0;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
     }
 
-    .interests a {
-      color: #7f5af0;
-      text-decoration: none;
-    }
-
-    .items {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      max-width: 640px;
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 640px;
+        flex-grow: 1;
+        align-items: center;
+        padding: 15px;
     }
     </style>
   </head>
-  <body>
+
     <body>
       <div class="items">
         <div class="profile">
@@ -99,6 +113,6 @@
           </a>
         </div>
       </div>
+
     </body>
-  </body>
 </html>
